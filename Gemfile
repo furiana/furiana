@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem "zurb-foundation"
+
 gem 'rails', '3.1.1'
 
 # Bundle edge Rails instead:
