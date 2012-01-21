@@ -7,14 +7,24 @@ gem 'rails', '3.1.1'
 gem "heroku"
 
 group :development do
+<<<<<<< HEAD
+=======
+	gem "sqlite3-ruby", :require => "sqlite3"
+>>>>>>> gh-pages
 	gem 'annotate'
 end
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
+<<<<<<< HEAD
 # sqlite3
 gem 'pg'
+=======
+group:production, :staging do
+	gem 'pg'
+end
+>>>>>>> gh-pages
 
 
 # Gems used only for assets and not required
