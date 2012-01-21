@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+	<div class="twelve columns">
+		<div id="featured"> 
+			<img src="/assets/orbit/overflow.jpg" alt="Overflow" data-caption="#htmlCaption"/>
+			<img src="/assets/orbit/captions.jpg" alt="HTML captions" data-caption="#htmlCaption2" />
+			<img src="/assets/orbit/features.jpg" alt="and more features" />
+		</div>
+		<span class="orbit-caption" id="htmlCaption"><strong>I'm A Badass Caption:</strong> I can haz <a href="#">links</a>, <em>style</em> or anything that is valid markup :)</span>
+		<span class="orbit-caption" id="htmlCaption2"><strong>I'm Also A Badass Caption:</strong> Isn't this cool?!</span>
+	</div>
+	</div>
+	
+	<div class="row">
+	<div class="twelve columns">
+		<ul class="nav-bar">
+			<li><%= link_to "Terms of Service", tos_path %></li>
+			<li><%= link_to "Price guide", prices_path %></li>
+			<li><%= link_to "Subject guide", subjects_path %></li>
+			<li><%= link_to "Shipping Rates", shipping_path %></li>
+			<li><%= link_to "Queue", queue_path %></li>
+			<li><%= link_to "Feedback", "#" %></li>
+		</ul>
+	</div>
+	</div>
+		
+	<div class="row">
+	<div class="twelve columns">
+		<%= yield %>
+	</div>
+	</div>
+
+</body>
+</html>

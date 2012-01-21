@@ -1,0 +1,53 @@
+<%= form_for(@commission) do |f| %>
+  <% if @commission.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@commission.errors.count, "error") %> prohibited this commission from being saved:</h2>
+
+      <ul>
+      <% @commission.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :commissioner %><br />
+    <%= f.text_field :commissioner %>
+  </div>
+  <div class="field">
+    <%= f.label :commission %><br />
+    <%= f.text_field :commission %>
+  </div>
+  <div class="field">
+    <%= f.label :info %><br />
+    <%= f.check_box :info %>
+  </div>
+  <div class="field">
+    <%= f.label :first_payment %><br />
+    <%= f.check_box :first_payment %>
+  </div>
+  <div class="field">
+    <%= f.label :sketch_completed %><br />
+    <%= f.check_box :sketch_completed %>
+  </div>
+  <div class="field">
+    <%= f.label :final_payment %><br />
+    <%= f.check_box :final_payment %>
+  </div>
+  <div class="field">
+    <%= f.label :high_res_sent %><br />
+    <%= f.check_box :high_res_sent %>
+  </div>
+  <div class="field">
+    <%= f.label :shipped %><br />
+    <%= f.check_box :shipped %>
+  </div>
+  <div class="field">
+    <%= f.label :est_completion %><br />
+    <%= f.text_field :est_completion %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  commissioner: MyString
+  commission: MyString
+  info: false
+  first_payment: false
+  sketch_completed: false
+  final_payment: false
+  high_res_sent: false
+  shipped: false
+  est_completion: MyString
+
+two:
+  commissioner: MyString
+  commission: MyString
+  info: false
+  first_payment: false
+  sketch_completed: false
+  final_payment: false
+  high_res_sent: false
+  shipped: false
+  est_completion: MyString
