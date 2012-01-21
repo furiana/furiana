@@ -1,4 +1,6 @@
 Furiana::Application.routes.draw do
+  resources :commissions
+
   get "pages/home"
 
   get "pages/about"
@@ -18,7 +20,7 @@ Furiana::Application.routes.draw do
   match '/prices', :to => 'pages#prices'
   match '/subjects', :to => 'pages#subjects'
   match '/shipping', :to => 'pages#shipping'
-  match '/queue', :to => 'pages#queue'
+  match '/queue', :to => 'commissions#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,20 @@
+<h1>Queue</h1>
+
+<% @commissions.each do |commission| %>
+<div class="panel">
+<ul>
+<li><strong>Commissioner:</strong> <%= commission.commissioner %></li>
+<li><strong>Project:</strong> <%= commission.commission %></li>
+<li><strong>Info received:</strong> <%= commission.info %></li>
+<li><strong>First payment received:</strong> <%= commission.first_payment %></li>
+<li><strong>Sketch completed:</strong> <%= commission.sketch_completed %></li>
+<li><strong>Final payment received:</strong> <%= commission.final_payment %></li>
+<li><strong>High resolution file sent:</strong> <%= commission.high_res_sent %></li>
+<li><strong>Shipped:</strong> <%= commission.shipped %></li>
+<li><strong>Estimated completion date:</strong> <%= commission.est_completion %></li>
+<li><%= link_to 'Show', commission %> <%= link_to 'Edit', edit_commission_path(commission) %> <%= link_to 'Destroy', commission, confirm: 'Are you sure?', method: :delete %></li>
+</ul>
+</div>
+<% end %>
+
+<%= link_to 'Add Commission', new_commission_path %>

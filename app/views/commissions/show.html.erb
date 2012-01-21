@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Commissioner:</b>
+  <%= @commission.commissioner %>
+</p>
+
+<p>
+  <b>Commission:</b>
+  <%= @commission.commission %>
+</p>
+
+<p>
+  <b>Info:</b>
+  <%= @commission.info %>
+</p>
+
+<p>
+  <b>First payment:</b>
+  <%= @commission.first_payment %>
+</p>
+
+<p>
+  <b>Sketch completed:</b>
+  <%= @commission.sketch_completed %>
+</p>
+
+<p>
+  <b>Final payment:</b>
+  <%= @commission.final_payment %>
+</p>
+
+<p>
+  <b>High res sent:</b>
+  <%= @commission.high_res_sent %>
+</p>
+
+<p>
+  <b>Shipped:</b>
+  <%= @commission.shipped %>
+</p>
+
+<p>
+  <b>Est completion:</b>
+  <%= @commission.est_completion %>
+</p>
+
+
+<%= link_to 'Edit', edit_commission_path(@commission) %> |
+<%= link_to 'Back', commissions_path %>

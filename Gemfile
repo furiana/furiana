@@ -4,10 +4,17 @@ gem "zurb-foundation"
 
 gem 'rails', '3.1.1'
 
+gem "heroku"
+
+group :development do
+	gem 'annotate'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# sqlite3
+gem 'pg'
 
 
 # Gems used only for assets and not required
